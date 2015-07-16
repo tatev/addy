@@ -54,13 +54,13 @@ block content
           li 17 HTML pages
         p
           | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.
-      .col-md-4.col-md-offset-1
+      .col-md-3.col-md-offset-1
         img.img-responsive(src='http://placehold.it/700x450', alt='')
   section(style="height: 100%; background-color: #efefef;")
     .row.container
       .col-lg-12.col-lg-offset-1
         h2.page-header What?
-      .col-md-4.col-md-offset-1
+      .col-md-3.col-md-offset-1
         img.img-responsive(src='http://placehold.it/700x450', alt='')
       .col-md-6.col-md-offset-1
         p The Modern Business template by Start Bootstrap includes:
@@ -76,14 +76,13 @@ block content
           | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.
   section#product(style="background-color: #dddddd; height: 100%;")
     .row.container
-      .col-lg-3.col-lg-offset-3
-        //img(src="/img/product.png", style="width: 180px;")
-        img(src="/img/addy_0.png", style="width: 120px; display: block;")
-        img(src="/img/addy_1.png", style="width: 120px; display: block;")
-        img(src="/img/addy_2.png", style="width: 120px; display: block;")
-        img(src="/img/addy_3.png", style="width: 120px; display: block;")
-        img(src="/img/addy_4.png", style="width: 120px; display: block;")
-      .col-lg-3
+      .col-md-3.col-md-offset-3
+        img(src="/img/addy_0.png")
+        img(src="/img/addy_1.png")
+        img(src="/img/addy_2.png")
+        img(src="/img/addy_3.png")
+        img(src="/img/addy_4.png")
+      .col-md-3
         h1 Customize
         select(ng-model="thirdLayer" ng-options="layer.name for layer in layers track by layer.name", ng-change="changeLayer(11)")
           option(value="") select 3rd layer
@@ -91,7 +90,7 @@ block content
           option(value="") select 2nd layer
         select(ng-model="firstLayer" ng-options="layer.name for layer in layers track by layer.name", ng-change="changeLayer(11)")
           option(value="") select 1st layer
-      .col-lg-3
+      .col-md-3
         h1 Total Price
         h2 €{{ totalPrice }}
         button.btn.btn-success.btn-lg Order

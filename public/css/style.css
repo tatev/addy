@@ -160,3 +160,8 @@ footer {
   padding-top: 8px;
   background-color: black;
 }
+
+#product img {
+  width: 30%;
+  display: block;
+}
