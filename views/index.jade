@@ -1,0 +1,160 @@
+extends layout
+
+block content
+  nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+    .container
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='/')
+          img(src="/img/logo_white_exp.png", style="display: inline; height: 50px;")
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='#home') HOME
+          li
+            a(href='#product') PRODUCT
+          li
+            a(href='#specifications') SPECIFICATIONS
+  header#home.carousel.slide
+    ol.carousel-indicators
+      li.active(data-target='#home', data-slide-to='0')
+      li(data-target='#home', data-slide-to='1')
+      li(data-target='#home', data-slide-to='2')
+      li(data-target='#home', data-slide-to='3')
+    .carousel-inner
+      .item.active
+        .fill(style="background-image:url('/img/banner_0.jpg');")
+      .item
+        .fill(style="background-image:url('/img/banner_1.jpg');")
+      .item
+        .fill(style="background-image:url('/img/banner_2.jpg');")
+      .item
+        .fill(style="background-image:url('/img/banner_3.jpg');")
+    a.left.carousel-control(href='#home', data-slide='prev')
+      span.icon-prev
+    a.right.carousel-control(href='#home', data-slide='next')
+      span.icon-next
+    section(style="height: 100%; background-color: #dddddd;")
+    .row.container
+      .col-lg-12.col-lg-offset-1
+        h2.page-header Why?
+      .col-md-6.col-md-offset-1
+        p The Modern Business template by Start Bootstrap includes:
+        ul
+          li
+            strong Bootstrap v3.2.0
+          li jQuery v1.11.0
+          li Font Awesome v4.1.0
+          li Working PHP contact form with validation
+          li Unstyled page elements for easy customization
+          li 17 HTML pages
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.
+      .col-md-4.col-md-offset-1
+        img.img-responsive(src='http://placehold.it/700x450', alt='')
+  section(style="height: 100%; background-color: #efefef;")
+    .row.container
+      .col-lg-12.col-lg-offset-1
+        h2.page-header What?
+      .col-md-4.col-md-offset-1
+        img.img-responsive(src='http://placehold.it/700x450', alt='')
+      .col-md-6.col-md-offset-1
+        p The Modern Business template by Start Bootstrap includes:
+        ul
+          li
+            strong Bootstrap v3.2.0
+          li jQuery v1.11.0
+          li Font Awesome v4.1.0
+          li Working PHP contact form with validation
+          li Unstyled page elements for easy customization
+          li 17 HTML pages
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.
+  section#product(style="background-color: #dddddd; height: 100%;")
+    .row.container
+      .col-lg-3.col-lg-offset-3
+        //img(src="/img/product.png", style="width: 180px;")
+        img(src="/img/addy_0.png", style="width: 120px; display: block;")
+        img(src="/img/addy_1.png", style="width: 120px; display: block;")
+        img(src="/img/addy_2.png", style="width: 120px; display: block;")
+        img(src="/img/addy_3.png", style="width: 120px; display: block;")
+        img(src="/img/addy_4.png", style="width: 120px; display: block;")
+      .col-lg-3
+        h1 Customize
+        select(ng-model="thirdLayer" ng-options="layer.name for layer in layers track by layer.name", ng-change="changeLayer(11)")
+          option(value="") select 3rd layer
+        select(ng-model="secondLayer" ng-options="layer.name for layer in layers track by layer.name", ng-change="changeLayer(11)")
+          option(value="") select 2nd layer
+        select(ng-model="firstLayer" ng-options="layer.name for layer in layers track by layer.name", ng-change="changeLayer(11)")
+          option(value="") select 1st layer
+      .col-lg-3
+        h1 Total Price
+        h2 €{{ totalPrice }}
+        button.btn.btn-success.btn-lg Order
+  section#specifications(style=" height: 100%; background-color: #efefef;")
+    .row.container
+      .col-lg-10.col-lg-offset-1
+        h1.page-header
+          | Product Specifications
+      .col-md-3.col-md-offset-1
+        .panel.panel-default
+          .panel-heading
+            h4
+              i.fa.fa-fw.fa-plug
+              |  Battery
+          .panel-body
+            ul
+              li
+                i.fa.fa-fw.fa-check
+                | quality 1
+              li
+                i.fa.fa-fw.fa-check
+                | quality 2
+              li
+                i.fa.fa-fw.fa-check
+                | quality 3
+      .col-md-3.col-md-offset-1
+        .panel.panel-default
+          .panel-heading
+            h4
+              i.fa.fa-fw.fa-music
+              |  Music
+          .panel-body
+            ul
+              li
+                i.fa.fa-fw.fa-check
+                | quality 1
+              li
+                i.fa.fa-fw.fa-check
+                | quality 2
+              li
+                i.fa.fa-fw.fa-check
+                | quality 3
+              li
+                i.fa.fa-fw.fa-check
+                | quality 4
+      .col-md-3.col-md-offset-1
+        .panel.panel-default
+          .panel-heading
+            h4
+              i.fa.fa-fw.fa-lightbulb-o
+              |  Lighting
+          .panel-body
+            ul
+              li
+                i.fa.fa-fw.fa-check
+                | quality 1
+              li
+                i.fa.fa-fw.fa-check
+                | quality 2
+              li
+                i.fa.fa-fw.fa-check
+                | quality 3
+  footer
+    .row.container
+      .col-lg-12.col-lg-offset-1
+        p Copyright © Addy 2015
