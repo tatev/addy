@@ -38,9 +38,9 @@ block content
       span.icon-prev
     a.right.carousel-control(href='#home', data-slide='next')
       span.icon-next
-  section(style="background-color: #dddddd;")
+  section
     .row.container
-      .col-lg-12.col-lg-offset-1
+      .col-md-12.col-md-offset-1
         h2.page-header Why?
       .col-md-6.col-md-offset-1
         p The Modern Business template by Start Bootstrap includes:
@@ -56,9 +56,9 @@ block content
           | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.
       .col-md-3.col-md-offset-1
         img.img-responsive(src='http://placehold.it/700x450', alt='')
-  section(style="background-color: #efefef;")
+  section(style="background-color: #f2f2f2;")
     .row.container
-      .col-lg-12.col-lg-offset-1
+      .col-md-12.col-md-offset-1
         h2.page-header What?
       .col-md-3.col-md-offset-1
         img.img-responsive(src='http://placehold.it/700x450', alt='')
@@ -74,7 +74,87 @@ block content
           li 17 HTML pages
         p
           | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.
-  section#product(style="background-color: #dddddd;")
+  section#specifications
+    .row
+      .col-md-11.col-md-offset-1
+        h1.page-header
+          | Product Specifications
+      .col-md-4.col-md-offset-1
+        .panel.panel-default
+          .panel-heading
+            h4
+              i.fa.fa-fw.fa-database
+              |  Base Layer
+          .panel-body
+            ul
+              li
+                i.fa.fa-fw.fa-check
+                | Powerbank
+              li
+                i.fa.fa-fw.fa-check
+                | Lithium ion, 6000mAh
+              li
+                i.fa.fa-fw.fa-check
+                | 2 USB ports
+              li
+                i.fa.fa-fw.fa-check
+                | Bluetouth, 3.5mm stereo
+      .col-md-4.col-md-offset-1
+        .panel.panel-default
+          .panel-heading
+            h4
+              i.fa.fa-fw.fa-plug
+              |  Battery Layer
+          .panel-body
+            ul
+              li
+                i.fa.fa-fw.fa-check
+                | Lithium ion, 2400mAh
+              li
+                i.fa.fa-fw.fa-check
+                | USB port
+              li
+                i.fa.fa-fw.fa-check
+                | extra charge
+    .row  
+      .col-md-4.col-md-offset-1
+        .panel.panel-default
+          .panel-heading
+            h4
+              i.fa.fa-fw.fa-music
+              |  Speaker Layer
+          .panel-body
+            ul
+              li
+                i.fa.fa-fw.fa-check
+                | Full-range listening
+              li
+                i.fa.fa-fw.fa-check
+                | Wireless and ultra-compact
+              li
+                i.fa.fa-fw.fa-check
+                | up to 7h of playback time
+              li
+                i.fa.fa-fw.fa-check
+                | 30hz-28khz frequency range
+      .col-md-4.col-md-offset-1
+        .panel.panel-default
+          .panel-heading
+            h4
+              i.fa.fa-fw.fa-lightbulb-o
+              |  Lighting Layer
+          .panel-body
+            ul
+              li
+                i.fa.fa-fw.fa-check
+                | Ambient light
+              li
+                i.fa.fa-fw.fa-check
+                | Low power LED
+              li
+                i.fa.fa-fw.fa-check
+                | Changeable light color
+  section#product(style="background-color: #f2f2f2;")
     .row.container
       .col-md-3.col-md-offset-3
         img(src="/img/addy_0.png")
@@ -94,66 +174,7 @@ block content
         h1 Total Price
         h2 €{{ totalPrice }}
         button.btn.btn-success.btn-lg Order
-  section#specifications(style="background-color: #efefef;")
-    .row.container
-      .col-lg-10.col-lg-offset-1
-        h1.page-header
-          | Product Specifications
-      .col-md-3.col-md-offset-1
-        .panel.panel-default
-          .panel-heading
-            h4
-              i.fa.fa-fw.fa-plug
-              |  Battery
-          .panel-body
-            ul
-              li
-                i.fa.fa-fw.fa-check
-                | quality 1
-              li
-                i.fa.fa-fw.fa-check
-                | quality 2
-              li
-                i.fa.fa-fw.fa-check
-                | quality 3
-      .col-md-3.col-md-offset-1
-        .panel.panel-default
-          .panel-heading
-            h4
-              i.fa.fa-fw.fa-music
-              |  Music
-          .panel-body
-            ul
-              li
-                i.fa.fa-fw.fa-check
-                | quality 1
-              li
-                i.fa.fa-fw.fa-check
-                | quality 2
-              li
-                i.fa.fa-fw.fa-check
-                | quality 3
-              li
-                i.fa.fa-fw.fa-check
-                | quality 4
-      .col-md-3.col-md-offset-1
-        .panel.panel-default
-          .panel-heading
-            h4
-              i.fa.fa-fw.fa-lightbulb-o
-              |  Lighting
-          .panel-body
-            ul
-              li
-                i.fa.fa-fw.fa-check
-                | quality 1
-              li
-                i.fa.fa-fw.fa-check
-                | quality 2
-              li
-                i.fa.fa-fw.fa-check
-                | quality 3
   footer
     .row.container
-      .col-lg-12.col-lg-offset-1
+      .col-md-12.col-md-offset-1
         p Copyright © Addy 2015
