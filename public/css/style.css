@@ -165,3 +165,8 @@ footer {
   width: 30%;
   display: block;
 }
+
+section {
+  padding: 15px 0;
+}
+
