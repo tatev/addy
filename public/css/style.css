@@ -143,6 +143,7 @@ th {
 
 .page-header {
   border-bottom: none;
+  margin-top: 20px;
 }
 
 .carousel-caption {
@@ -160,7 +161,7 @@ footer {
   color: white;
   margin: 0;
   padding-top: 8px;
-  background-color: black;
+  background-color: #222222;
 }
 
 #product img {
