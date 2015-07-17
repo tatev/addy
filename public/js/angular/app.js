@@ -5,7 +5,7 @@ app.controller('UndefinedCtrl', ['$scope', function ($scope) {
 	//$scope.currencySign = '€';
 
   $scope.layers = [
-    { name: 'battery', price: 150, img: '/img/addy_3.png' },
+    { name: 'battery', price: 40, img: '/img/addy_3.png' },
     { name: 'speaker', price: 75, img: '/img/addy_2.png' },
     { name: 'lighting', price: 35, img: '/img/addy_1.png' }
   ];
